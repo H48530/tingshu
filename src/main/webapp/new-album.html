@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>听书 | 新建专辑</title>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+<header>
+    <div class="brand">
+        <a href="/">听</a>
+    </div>
+</header>
+
+<form method="post" action="/new-album" enctype="multipart/form-data">
+    专辑名称：<input type="text" name="name">
+    <br>
+    <input type="file" name="cover">
+    <br>
+    <button type="submit">新建专辑</button>
+</form>
+<script src="/js/header.js"></script>
+</body>
+</html>

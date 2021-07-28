@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>声音录制并上传</title>
+    <link rel="stylesheet" href="/css/new-story.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+<main>
+    <h1>声音 录制&上传</h1>
+    <div class="form-shell">
+        <form method="post" action="/api/new-story.json" enctype="multipart/formdata">
+            <input type="text" id="name" name="name" placeholder="故事名称">
+        </form>
+    </div>
+    <canvas height="100px" id="canvas"></canvas>
+    <div class="buttons">
+        <button id="authorize" type="button">授权</button>
+        <button id="start" type="button" disabled>开始</button>
+        <button id="stop" type="button" disabled>停止</button>
+        <button id="upload" type="button" disabled>上传</button>
+    </div>
+    <div class="preview">
+        <audio controls></audio>
+    </div>
+    <div class="outer">
+        <pre id="logPanel"></pre>
+    </div>
+</main>
+
+<script src="/js/new-story.js"></script>
+</body>
+</html>
